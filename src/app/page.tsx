@@ -8,16 +8,10 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import {
   Code2,
-  Smartphone,
-  Cloud,
-  BarChart3,
   Zap,
   ArrowRight,
   Star,
-  Download,
   ExternalLink,
-  Layers,
-  Database,
   Users,
   Target,
   Award,
