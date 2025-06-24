@@ -376,13 +376,13 @@ export default function LightWebxProducts() {
       {/* Navigation */}
       <nav
         ref={navRef}
-        className="fixed top-4 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-gray-900/80 border border-gray-800 rounded-full px-8 py-4 navbar-glow"
+        className="fixed top-4 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-gray-900/80 border border-gray-800 rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 w-[90%] max-w-[90vw] md:max-w-fit"
       >
-        <div className="flex items-center justify-center space-x-8">
-          <div className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent navbar-logo">
+        <div className="flex flex-wrap items-center justify-between gap-4 sm:gap-8">
+          <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent whitespace-nowrap">
             <Link href="/">Light Webx</Link>
           </div>
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <Link
               href="#about"
               className="relative text-gray-300 hover:text-blue-400 transition-colors duration-300 after:content-[''] after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-blue-400 after:transition-all hover:after:w-full"
