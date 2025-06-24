@@ -647,7 +647,7 @@ export default function LightWebxProducts() {
                       >
                         <Link href={product.link} target="_blank">
                           <ExternalLink className="h-4 w-4" color="white" />
-                          Try Free
+                          Try
                         </Link>
                       </Button>
                     </div>
