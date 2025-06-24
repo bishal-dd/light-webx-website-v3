@@ -310,10 +310,10 @@ export default function LightWebxProducts() {
 
   const products = [
     {
-      name: "2 Quick Paper",
+      name: "Bills to Track",
       category: "Fintech",
       description:
-        "2 Quick Paper is a platform where businesses can digitalize their invoice and receipt management.",
+        "Bills to Track is a platform where businesses can digitalize their invoice and receipt management.",
       features: [
         "Invoice Management",
         "Receipt Management",
@@ -326,7 +326,7 @@ export default function LightWebxProducts() {
       icon: Code2,
       gradient: "from-blue-400 to-blue-600",
       status: "Popular",
-      link: "https://2quickpaper.com",
+      link: "https://billstotrack.com",
     },
     {
       name: "Software Guides",
@@ -596,33 +596,6 @@ export default function LightWebxProducts() {
                       >
                         <IconComponent className="h-6 w-6 text-white" />
                       </div>
-                      <Badge
-                        variant="secondary"
-                        className={`
-                        ${
-                          product.status === "Popular"
-                            ? "bg-blue-500/20 text-blue-400 border-blue-500/30"
-                            : ""
-                        }
-                        ${
-                          product.status === "New"
-                            ? "bg-green-500/20 text-green-400 border-green-500/30"
-                            : ""
-                        }
-                        ${
-                          product.status === "Enterprise"
-                            ? "bg-purple-500/20 text-purple-400 border-purple-500/30"
-                            : ""
-                        }
-                        ${
-                          product.status === "Trending"
-                            ? "bg-orange-500/20 text-orange-400 border-orange-500/30"
-                            : ""
-                        }
-                      `}
-                      >
-                        {product.status}
-                      </Badge>
                     </div>
 
                     <h3 className="text-xl font-bold mb-2 text-white group-hover:text-blue-400 transition-colors">
@@ -672,7 +645,7 @@ export default function LightWebxProducts() {
                         className="flex-1 bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 border-0 text-sm"
                         asChild
                       >
-                        <Link href={product.link}>
+                        <Link href={product.link} target="_blank">
                           <ExternalLink className="h-4 w-4" color="white" />
                           Try Free
                         </Link>
