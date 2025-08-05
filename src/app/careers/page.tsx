@@ -150,7 +150,10 @@ export default function CareersPage() {
                     className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 border-0"
                     asChild
                   >
-                    <Link href="https://docs.google.com/forms/d/e/1FAIpQLSe7eMMIQvyZXhsvAYHTtuLPUVsv6qwfWJowFg7hSfGi9Z438A/viewform?usp=sharing&ouid=112855172164278621128">
+                    <Link
+                      href="https://docs.google.com/forms/d/e/1FAIpQLSe7eMMIQvyZXhsvAYHTtuLPUVsv6qwfWJowFg7hSfGi9Z438A/viewform?usp=sharing&ouid=112855172164278621128"
+                      target="_blank"
+                    >
                       Apply Now
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
