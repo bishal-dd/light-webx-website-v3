@@ -145,7 +145,10 @@ export default function CareersPage() {
                       <div className="flex items-center">+Stock options</div>
                     </div>
                   </div>
-
+                  <div className="job-divider my-4 text-white text-sm">
+                    *If the form does not open on FaceBook and Instagram, Tap
+                    the 3 dots at the top and select &quot;Open in Chrome&quot;
+                  </div>
                   <Button
                     className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 border-0"
                     asChild
@@ -158,6 +161,16 @@ export default function CareersPage() {
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
                   </Button>
+
+                  <div className="job-divider my-4 text-white text-sm">
+                    Any questions contact +975-17959259 on WhatsApp{" "}
+                    <Link
+                      href={"https://api.whatsapp.com/send?phone=17959259"}
+                      className="text-blue-400"
+                    >
+                      here.{" "}
+                    </Link>
+                  </div>
                 </CardContent>
               </Card>
             ))}
