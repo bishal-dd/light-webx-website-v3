@@ -6,6 +6,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Link from "next/link";
 import { Menu, X } from "lucide-react"; // Make sure you have lucide-react installed
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -51,8 +52,14 @@ export default function NavBar() {
       className="fixed top-4 left-1/2 -translate-x-1/2 z-50 backdrop-blur-md bg-gray-900/80 border border-gray-800 rounded-full px-4 sm:px-6 md:px-8 py-2 sm:py-3 md:py-4 w-[90%] max-w-[90vw] md:max-w-fit"
     >
       <div className="flex items-center justify-between gap-4 sm:gap-8">
+        {/* Logo */}
+        <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent whitespace-nowrap navbar-logo">
+          <Link href="/">
+            <Image src="/lwx_logo.png" alt="Logo" width={60} height={60} />
+          </Link>
+        </span>
         <div className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-600 bg-clip-text text-transparent whitespace-nowrap navbar-logo">
-          <Link href="/">Light Webx</Link>
+          <Link href="/">Light WebX</Link>
         </div>
 
         {/* Hamburger Icon (Mobile) */}
