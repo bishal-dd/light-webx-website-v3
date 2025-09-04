@@ -38,24 +38,47 @@ export default function CareersPage() {
   }, []);
 
   const jobOpenings = [
+    // {
+    //   title: "Full Stack Developer",
+    //   department: "Engineering",
+    //   location: "Thimphu, Bhutan",
+    //   type: "Full-time",
+    //   salary: "Nu.30k-",
+    //   experience: "5+ years",
+    //   description:
+    //     "Join our founding engineering team to build next-generation software and hardware technology. You'll work on cutting-edge projects that impact millions of people worldwide. You'll work with the latest tools and technologies, while building a startup from the ground up. Join us today and make a difference in the world.",
+    //   requirements: [
+    //     "React/Next.js expertise",
+    //     "API backend development",
+    //     "JavaScript/TypeScript proficiency",
+    //     "Git version control",
+    //     "Database management",
+    //   ],
+    //   posted: "2 days ago",
+    //   featured: true,
+    // applyLink:
+    //     "https://docs.google.com/forms/d/e/1FAIpQLSe7eMMIQvyZXhsvAYHTtuLPUVsv6qwfWJowFg7hSfGi9Z438A/viewform?usp=sharing&ouid=112855172164278621128",
+    // // },
     {
-      title: "Full Stack Developer",
-      department: "Engineering",
+      title: "Business Manager",
+      department: "Business",
       location: "Thimphu, Bhutan",
       type: "Full-time",
-      salary: "Nu.30k-",
+      salary: "Starting Nu.25k-Nu.30k",
       experience: "5+ years",
       description:
-        "Join our founding engineering team to build next-generation software and hardware technology. You'll work on cutting-edge projects that impact millions of people worldwide. You'll work with the latest tools and technologies, while building a startup from the ground up. Join us today and make a difference in the world.",
+        "We are looking for a highly motivated and organized Business Manager to oversee daily operations and support the growth of our company. The Business Manager will play a key role in driving efficiency, managing resources, and ensuring alignment between business goals and execution.",
       requirements: [
-        "React/Next.js expertise",
-        "API backend development",
-        "JavaScript/TypeScript proficiency",
-        "Git version control",
-        "Database management",
+        "Proven experience in business or operations management",
+        "Strong leadership and communication skills",
+        "Knowledge of finance and business operations",
+        "Ability to manage teams and projects",
+        "Bachelor’s degree in Business or related field",
       ],
       posted: "2 days ago",
       featured: true,
+      applyLink:
+        "https://docs.google.com/forms/d/e/1FAIpQLSdrteMLPa7-BFw7Hibh2nCi4avOX5IpZ-quNwNNCybjHdZPgQ/viewform?usp=sharing&ouid=112855172164278621128",
     },
   ];
 
@@ -89,11 +112,6 @@ export default function CareersPage() {
                         <h3 className="text-xl font-bold text-white group-hover:text-blue-400 transition-colors">
                           {job.title}
                         </h3>
-                        {job.featured && (
-                          <Badge className="bg-blue-500/20 text-blue-400 border-blue-500/30 text-xs">
-                            Featured
-                          </Badge>
-                        )}
                       </div>
                       <div className="flex items-center space-x-4 text-sm text-gray-400 mb-3">
                         <div className="flex items-center">
@@ -153,10 +171,7 @@ export default function CareersPage() {
                     className="w-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 border-0"
                     asChild
                   >
-                    <Link
-                      href="https://docs.google.com/forms/d/e/1FAIpQLSe7eMMIQvyZXhsvAYHTtuLPUVsv6qwfWJowFg7hSfGi9Z438A/viewform?usp=sharing&ouid=112855172164278621128"
-                      target="_blank"
-                    >
+                    <Link href={job.applyLink} target="_blank">
                       Apply Now
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Link>
